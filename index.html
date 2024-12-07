@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Wizard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Recipe Wizard</h1>
+      <input type="text" id="ingredientInput" placeholder="Enter ingredients (e.g., tomato, chicken)">
+      <button id="searchButton">Search Recipes</button>
+    </header>
+    <section id="results">
+      <h2>Search Results</h2>
+      <div id="recipeList"></div>
+    </section>
+    <section id="recipeDetail" class="hidden">
+      <button id="backButton">Back</button>
+      <h2 id="recipeTitle"></h2>
+      <img id="recipeImage" alt="Recipe Image">
+      <p id="recipeDescription"></p>
+      <p id="cookingTime"></p>
+      <ul id="ingredientsList"></ul>
+      <div id="nutritionChart"></div>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
